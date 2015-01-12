@@ -1,0 +1,22 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int numcases;
+    cin >> numcases;
+    for (int i=0; i<numcases; ++i) {
+        int rows;
+        cin >> rows;
+        if (rows%2) cout << 2 << endl;
+        else {
+            if ((rows/2)%2) cout << 4 << endl;
+            else cout << 3 << endl;
+        }
+    }
+    return 0;
+}
